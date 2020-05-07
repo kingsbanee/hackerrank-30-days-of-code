@@ -1,0 +1,40 @@
+"""
+Calculate the hourglass sum for every hourglass in A , 
+then print the maximum hourglass sum.
+
+Input Format
+
+There are 6 lines of input, where each line contains 6 space-separated integers describing 2D Array ; 
+every value in A will be in the inclusive range of -9 to 9.
+"""
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    arr = []
+
+    for _ in range(6):
+        arr.append(list(map(int, input().rstrip().split())))
+    
+    hourglasses = []
+       
+    for i in range(0,4):
+        for j in range(0,4):
+            top = arr[i][j:j+3]
+            middle = [arr[i+1][j+1]]
+            bottom = arr[i+2][j:j+3]
+            hourglass = top + middle + bottom
+            hourglasses.append(hourglass)
+
+    list_1 = []
+
+    for hourglass in hourglasses:
+        list_1.append(sum(hourglass))
+
+    print(max(list_1))
