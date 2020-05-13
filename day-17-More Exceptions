@@ -8,7 +8,7 @@ Note: Do not use an access modifier (e.g.: public) in the declaration for your C
 
 class Calculator:
 
-    def power(T, n, p):
+    def power(self, n, p):
         if n < 0 or p < 0:
             return "n and p should be non-negative"
 
