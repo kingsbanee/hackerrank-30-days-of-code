@@ -4,4 +4,4 @@ Every day for 30 days, you will receive an email posing a challenge for you to c
 
 Here, I am applying what I have learnt in Python to solve the problems posed.
 
-
+Day 21-Generic is missing because Python was not allowed
