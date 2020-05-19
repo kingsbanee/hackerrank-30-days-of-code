@@ -34,6 +34,9 @@ class Solution:
                 print(root.data, end=" ")
                 queue.append(root.left)
                 queue.append(root.right)
+                #these 2 .append() will keep increasing the size of the list. Whenever there both None and valid values will be added.
+                #This will continue running until they hit the end of the list that ends with 'None'
+                #In this example, I will have 13 items in the end
             
 
 T=int(input())
